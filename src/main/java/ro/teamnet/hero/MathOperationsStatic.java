@@ -24,7 +24,7 @@ public class MathOperationsStatic {
     }
 
     @RequestMapping(value = "deAfisat")
-    public int simpleAdd(){
+    public Integer simpleAdd(){
         return 1+1;
     }
 
