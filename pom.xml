@@ -31,17 +31,17 @@
             <snapshots><enabled>false</enabled></snapshots>
         </repository>
     </repositories>
-     <dependencies>
-         <dependency>
-             <artifactId>junit</artifactId>
-             <groupId>junit</groupId>
-             <version>4.11</version>
-         </dependency>
-         <dependency>
-             <groupId>org.testng</groupId>
-             <artifactId>testng</artifactId>
-             <version>6.8.7</version>
-         </dependency>
+    <dependencies>
+        <dependency>
+            <artifactId>junit</artifactId>
+            <groupId>junit</groupId>
+            <version>4.11</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.8.7</version>
+        </dependency>
 
-     </dependencies>
+    </dependencies>
 </project>

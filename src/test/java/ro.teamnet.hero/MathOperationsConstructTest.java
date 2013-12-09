@@ -6,17 +6,9 @@ import org.junit.Test;
 
 import java.math.BigDecimal;
 
-/**
- * MathOperationsConstructTest.java
- * <p/>
- * Copyright (c) 2013 Teamnet. All Rights Reserved.
- * <p/>
- * This source file may not be copied, modified or redistributed,
- * in whole or in part, in any form or for any reason, without the express
- * written consent of Teamnet.
- */
 
 public class MathOperationsConstructTest {
+
     private BigDecimal a;
     private BigDecimal b;
     MathOperations mathOperations;
@@ -27,12 +19,24 @@ public class MathOperationsConstructTest {
         a=BigDecimal.TEN;
         mathOperations=
                 new MathOperations();
-
     }
 
     @Test
     public void testDivide() throws Exception {
-        Assert.assertEquals(BigDecimal.ZERO,mathOperations.divide(b,a));
+        Assert.assertEquals(BigDecimal.ZERO, mathOperations.divide(b, a));
+    }
 
+    @Test
+    public void testAdd() throws Exception {
+        Assert.assertEquals(BigDecimal.TEN, mathOperations.add(a, b));
+    }
+
+    @Test
+    public void testSubstract() throws Exception {
+        Assert.assertEquals(BigDecimal.TEN, mathOperations.substract(a, b));
+    }
+    @Test
+    public void testMultiply() throws Exception {
+        Assert.assertEquals(BigDecimal.ZERO, mathOperations.multiply(a, b));
     }
 }

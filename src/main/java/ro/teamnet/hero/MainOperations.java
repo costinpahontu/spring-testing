@@ -1,5 +1,7 @@
 package ro.teamnet.hero;
 
+import ro.teamnet.hero.annotations.RequestMapping;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -25,5 +27,14 @@ public class MainOperations {
         Object obj = mainConstr.newInstance();
         Method m = c.getDeclaredMethod("simpleAdd");
         System.out.println(m.invoke(obj));
+
+
+
+
+
+        String valoare=m.getAnnotation(RequestMapping.class).value();
+          System.out.println(valoare);
+         //http://stackoverflow.com/questions/18340666/how-to-get-the-value-of-annotation-using-reflection-in-java
+        //MyClass.class.getMethod("getElement").getAnnotation(JsonView.class).value()
     }
 }
